@@ -10,7 +10,7 @@ module.exports = {
         // pagination setup
         const options = {
             page: parseInt(page, 10) || 1,
-            limit: parseInt(perPage, 10) || 10
+            limit: parseInt(perPage, 10) || 12
         };
 
         // matching criteria

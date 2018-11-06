@@ -1,0 +1,15 @@
+.headerBar {
+  background-color: #000;
+  display: block;
+  color: #fff;
+  padding-left: 8px;
+}
+
+.searchBar {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 25px;
+
+}

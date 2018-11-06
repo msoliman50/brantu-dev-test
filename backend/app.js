@@ -1,6 +1,7 @@
 // 3rd party libraries
 const express       = require('express'),
-      bodyParser    = require('body-parser');
+      bodyParser    = require('body-parser'),
+      cors          = require('cors');
 
 // own files
 const env           = require('./config/config'),
@@ -13,7 +14,9 @@ const app = express();
 const port = process.env.PORT;
 
 // configure the app
+app.use(cors());
 app.use(bodyParser.json());
+
 
 // register api endpoints
 app.use('/api', restRouter);
